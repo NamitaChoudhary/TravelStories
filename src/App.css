@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+html,
+body,
+.app{
+    height: 100vh;
+   
+    padding: 1em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.slider{
+  position: relative;
+  height: 80vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
+}
+.image1{
+  width: 1150px;
+  height: 570px;
+  border-radius: 10px;
+
+}
+.right-arrow{
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 2rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.left-arrow{
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 2rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.slide{
+  opacity:0;
+  transition-duration: 1s ease;
+
 }
 
-.App-link {
-  color: #61dafb;
+.slide.active{
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+.container{
+  padding: 90px;
+  position: relative;
+  font-size: 1.5rem;
+  align-items: center;
+}
+.containersearch{
+  padding: 10px;
+}
+.container11{
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(image27.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+  position: relative;
+  
+  align-items: center;
+}
+.para{
+  color:#404040;
+  text-align: center;
+  
+}
+.header1{
+  font-size: 4rem;
+}
+.cards{
+  padding: 80px;
+  position: relative;
+}
+.container1{
+  padding: 90px;
+  position: relative;
+}
+.main{
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(image27.jpg);
+  background-repeat: no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+  position: relative;
+}
+.Tab1{
+  background: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
